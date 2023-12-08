@@ -22,7 +22,8 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "storybook": "^7.6.3"
+    "storybook": "^7.6.3",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
@@ -35,6 +36,7 @@
     "@storybook/nextjs": "^7.6.3",
     "@storybook/react": "^7.6.3",
     "@storybook/test": "^7.6.3",
+    "@swc/plugin-styled-components": "^1.5.105",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",
@@ -43,6 +45,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "babel-plugin-styled-components": "^2.1.4",
     "cypress": "^13.6.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
