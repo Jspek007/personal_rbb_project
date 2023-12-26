@@ -6,9 +6,7 @@
     "plugin:jest-dom/recommended",
     "plugin:storybook/recommended"
   ],
-  "plugins": [
-    "prettier"
-  ],
+  "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": [
       "error",

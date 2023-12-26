@@ -1,9 +1,9 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-      "types": ["cypress", "node", "./support"],
-      "baseUrl": "http://localhost:3000"
-    },
-    "include": ["**/*.tsx"],
-    "exclude": []
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["cypress", "node", "./support"],
+    "baseUrl": "http://localhost:3000"
+  },
+  "include": ["**/*.tsx"],
+  "exclude": []
 }
