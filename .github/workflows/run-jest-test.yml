@@ -1,4 +1,4 @@
-name: Test React Native App
+name: Test React App
 
 on:
   pull_request:
@@ -15,5 +15,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "14"
-      - run: npm install
+      - run: npm ci
       - run: npm run test
