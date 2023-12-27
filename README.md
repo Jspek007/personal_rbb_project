@@ -1,4 +1,4 @@
-[![Run linters and specs](https://github.com/Jspek007/personal_rbb_project/actions/workflows/ci.yml/badge.svg)](https://github.com/Jspek007/personal_rbb_project/actions/workflows/ci.yml)
+[![Run linters and specs](https://github.com/Jspek007/personal_rbb_project/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Jspek007/personal_rbb_project/actions/workflows/ci.yml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
