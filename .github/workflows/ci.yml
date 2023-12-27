@@ -24,17 +24,17 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup and run Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           headless: true
-          start: npm start
+          start: yarn start
 
       - name: Run ESLint
-        run: npm run lint
+        run: yarn run lint
 
       - name: Run Prettier
-        run: npm run format:check
+        run: yarn run format:check
 
       - name: Run Jest
-        run: npm run test:unit
+        run: yarn run test:unit
