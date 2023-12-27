@@ -34,7 +34,7 @@ jobs:
         run: yarn run lint
 
       - name: Run Prettier
-        run: yarn run format:check
+        run: yarn run format
 
       - name: Run Jest
-        run: yarn run test:unit
+        run: yarn run test
