@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import './avatar.css';
 export interface AvatarProps {
   /**The username of the user */ name: string;
