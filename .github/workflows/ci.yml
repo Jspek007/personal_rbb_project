@@ -1,0 +1,37 @@
+# CI name
+
+name: Run linters and specs
+
+# The on key is used to define
+# when the CI should be triggered, aka Event
+on:
+  # When someone push or merge a pull request
+  # inside the main branch
+  push:
+    branches:
+      - main
+    # When someone creates a pull request
+    # from the main branch
+  pull_request:
+    branches:
+      - main
+jobs:
+  # Job name
+  suite:
+    # Runner meaningful name
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup and run Cypess
+      uses: cypress-io/github-action@v2
+    with:
+      browser: chrome
+      headless: true
+      start: npm start
+    
+    - name: Run ESLint
+      run: npm run lint
+    - name: Run Prettier
+      run: npm run format
+    - name: Run Jest
+      run: npm run test
