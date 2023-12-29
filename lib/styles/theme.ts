@@ -1,4 +1,4 @@
-import { openSans, montserrat } from '@/app/lib/styles/fonts';
+import { openSans, montserrat } from './fonts';
 
 const theme = {
   colors: {
@@ -47,6 +47,24 @@ const theme = {
       color: '#666666',
       fontSize: '1rem',
       lineHeight: 1.5,
+    },
+  },
+  layout: {
+    margin: {
+      xs: '0.3125rem' /* 5px */,
+      sm: '0.625rem' /* 10px */,
+      md: '1rem' /* 16px */,
+      lg: '1.5rem' /* 24px */,
+      xl: '2rem' /* 32px */,
+      xxl: '3rem' /* 48px */,
+    },
+    padding: {
+      xs: '0.3125rem' /* 5px */,
+      sm: '0.625rem' /* 10px */,
+      md: '1rem' /* 16px */,
+      lg: '1.5rem' /* 24px */,
+      xl: '2rem' /* 32px */,
+      xxl: '3rem' /* 48px */,
     },
   },
 };
