@@ -1,5 +1,6 @@
-import StyledComponentsRegistry from './lib/registry';
-import GlobalStyles from './lib/styles/GlobalStyles';
+import StyledComponentsRegistry from '../../lib/registry';
+import GlobalStyles from '../../lib/styles/GlobalStyles';
+import React from 'react';
 
 export default function RootLayout(props: React.PropsWithChildren) {
   return (
