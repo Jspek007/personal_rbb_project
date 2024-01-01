@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import { Button } from './common/components/button/Button';
 
 export default function Home() {
   return (
@@ -27,6 +28,10 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+      <Button buttonType="primary">
+        <span>TEst</span>
+      </Button>
 
       <div className={styles.center}>
         <Image
