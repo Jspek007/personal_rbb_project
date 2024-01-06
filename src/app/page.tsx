@@ -29,8 +29,8 @@ export default function Home() {
         </div>
       </div>
 
-      <Button buttonType="primary">
-        <span>TEst</span>
+      <Button $buttonType="primary">
+        <span>Test</span>
       </Button>
 
       <div className={styles.center}>

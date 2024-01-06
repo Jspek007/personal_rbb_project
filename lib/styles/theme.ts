@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 export const theme = {
   colors: {
-    primary: '#3498db',
+    primary: 'rgb(52, 152, 219)',
     primaryDark: '#186091',
     secondary: '#2ecc71',
     secondaryDark: '#169c4e',

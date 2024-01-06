@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { borderSpacing, focusOutline } from '../../../../../lib/styles/mixins';
 import { theme } from '../../../../../lib/styles/theme';
 import { ButtonProps } from './Button.types';
+import { Button } from './Button';
 
 const TYPE = {
   primary: css`
@@ -18,6 +19,7 @@ const TYPE = {
   `,
   secondary: css`
     background-color: ${theme.colors.secondary};
+    box-shadow: 0 0 1.5rem ${theme.colors.secondaryDark};
     color: ${theme.colors.white};
     &:hover {
       background-color: ${theme.colors.secondaryDark};
@@ -30,6 +32,7 @@ const TYPE = {
   `,
   tertiary: css`
     background-color: ${theme.colors.accent};
+    box-shadow: 0 0 1.5rem ${theme.colors.accentDark};
     color: ${theme.colors.white};
     font-weight: 400;
     width: auto;
@@ -74,7 +77,7 @@ export const Container = styled.button<ButtonProps>`
   border: none;
   cursor: pointer;
 
-  ${(props) => props.buttonType && TYPE[props.buttonType]}
+  ${({ $buttonType }) => $buttonType && TYPE[$buttonType]}
   ${(props) => props.disabled && DISABLED}
 
   &:focus-visible {
