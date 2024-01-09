@@ -6,7 +6,7 @@ const createJestConfig = nextJest({
 
 const customJestConfig = {
   collectCoverageFrom: [
-    '<rootDir>/src/**/*.{js,jsx,ts,tsx}',
+    '<rootDir>/src/app/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/{theme,types,test}/**/*',
     '!<rootDir>/src/**/*.{types,stories}.*',
     '!**/*.d.ts',
